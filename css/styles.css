@@ -21,13 +21,16 @@ body {
 }
 
 ul {
-    display: flex;
     padding: 0;
     margin: 0;
 }
 
 p {
     margin: 0;
+}
+
+img {
+    display: block;
 }
 
 .container {
@@ -38,6 +41,10 @@ p {
 
 .list {
     list-style-type: none;
+}
+
+.flex-list {
+    display: flex;
 }
 
 .section {
@@ -58,6 +65,7 @@ p {
 .header-navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
 }
 
@@ -72,9 +80,11 @@ p {
 
 .web {
     margin-right: 93px;
+    padding: 24px 0;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
+    line-height: 1.1923;
     color: var(--color-decoration);
 }
 
@@ -82,21 +92,27 @@ p {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
+    line-height: 1.1923;
     color: var(--color-black);
 }
 
 .home {
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    line-height: 1.1428;
     color: var(--color-decoration);
 }
 
 .navigation-list {
-    display: flex;
     align-items: center;
     gap: 50px;
     margin: 0;
 }
 
 .navigation-link {
+    display: block;
+    padding: 32px 0;
     font-weight: 500;
     line-height: 1.1428;
     letter-spacing: 0.02em;
@@ -105,13 +121,13 @@ p {
 }
 
 .contact-list {
-    padding: 32px 0;
-    display: flex;
     gap: 50px;
     margin: 0;
 }
 
 .contact-item {
+    display: block;
+    padding: 32px 0;
     font-weight: 500;
     line-height: 1.1428;
     letter-spacing: 0.02em;
@@ -140,6 +156,7 @@ p {
     font-size: 44px;
     line-height: 1.3636;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--color-white);
 }
 
@@ -197,6 +214,10 @@ p {
 }
 
 /* чим ми займаємось */
+.service-section {
+    padding-bottom: 94px;
+}
+
 .title {
     margin: 0 0 50px;
     text-align: center;
@@ -207,7 +228,7 @@ p {
 }
 
 .service-list {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* команда */
@@ -268,6 +289,7 @@ p {
 }
 
 .footer-list {
+    display: flex;
     flex-direction: column;
     gap: 9px;
 }
